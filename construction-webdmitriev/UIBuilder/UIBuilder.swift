@@ -10,6 +10,6 @@ import UIKit
 final class UIBuilder {
     
     let offsetPage: CGFloat = 18
-    
+    let pussy: String = "Not yours hahahahaha"
     
 }
