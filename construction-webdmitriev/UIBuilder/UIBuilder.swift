@@ -9,7 +9,7 @@ import UIKit
 
 final class UIBuilder {
     
-    let offsetPage: CGFloat = 16
+    let offsetPage: CGFloat = 18
     
     
 }
