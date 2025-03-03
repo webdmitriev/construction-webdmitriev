@@ -22,6 +22,7 @@ final class MainViewController: UIViewController {
         $0.textColor = .appBlack
         return $0
     }(UILabel())
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
