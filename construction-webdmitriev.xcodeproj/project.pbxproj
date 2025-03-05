@@ -8,31 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		535307872D737EF400A6CF08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535307832D737EF400A6CF08 /* ViewController.swift */; };
+		538570852D785D850047589D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385707F2D785D850047589D /* MainViewController.swift */; };
+		538570862D785D850047589D /* PreviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538570812D785D850047589D /* PreviewPresenter.swift */; };
+		538570872D785D850047589D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538570822D785D850047589D /* PreviewViewController.swift */; };
+		5385708A2D785D8C0047589D /* UIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538570882D785D8C0047589D /* UIBuilder.swift */; };
+		5385708F2D785D930047589D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385708B2D785D930047589D /* AppDelegate.swift */; };
+		538570902D785D930047589D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385708D2D785D930047589D /* SceneDelegate.swift */; };
+		538570912D785D930047589D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5385708C2D785D930047589D /* Assets.xcassets */; };
+		538570972D78616D0047589D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538570952D78616D0047589D /* TabBarController.swift */; };
+		5385709A2D7861A20047589D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538570992D7861A20047589D /* SearchViewController.swift */; };
+		5385709D2D78629A0047589D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385709C2D78629A0047589D /* FavoriteViewController.swift */; };
+		538570A02D7862D60047589D /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385709F2D7862D60047589D /* ServicesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		535307672D737EB000A6CF08 /* construction-webdmitriev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "construction-webdmitriev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		535307812D737EF400A6CF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		535307832D737EF400A6CF08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5385707F2D785D850047589D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		538570812D785D850047589D /* PreviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPresenter.swift; sourceTree = "<group>"; };
+		538570822D785D850047589D /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		538570882D785D8C0047589D /* UIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBuilder.swift; sourceTree = "<group>"; };
+		5385708B2D785D930047589D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5385708C2D785D930047589D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5385708D2D785D930047589D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		538570952D78616D0047589D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		538570992D7861A20047589D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5385709C2D78629A0047589D /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		5385709F2D7862D60047589D /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		5353078A2D737F0B00A6CF08 /* Application */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Application;
-			sourceTree = "<group>";
-		};
-		535307902D73813400A6CF08 /* UIBuilder */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = UIBuilder;
-			sourceTree = "<group>";
-		};
-		535307972D738CD300A6CF08 /* Screens */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Screens;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		535307642D737EB000A6CF08 /* Frameworks */ = {
@@ -64,13 +68,93 @@
 		535307842D737EF400A6CF08 /* construction-webdmitriev */ = {
 			isa = PBXGroup;
 			children = (
-				535307972D738CD300A6CF08 /* Screens */,
-				535307902D73813400A6CF08 /* UIBuilder */,
-				5353078A2D737F0B00A6CF08 /* Application */,
+				5385708E2D785D930047589D /* Application */,
+				538570892D785D8C0047589D /* UIBuilder */,
+				538570842D785D850047589D /* Screens */,
 				535307812D737EF400A6CF08 /* Info.plist */,
 				535307832D737EF400A6CF08 /* ViewController.swift */,
 			);
 			path = "construction-webdmitriev";
+			sourceTree = "<group>";
+		};
+		538570802D785D850047589D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5385707F2D785D850047589D /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		538570832D785D850047589D /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				538570812D785D850047589D /* PreviewPresenter.swift */,
+				538570822D785D850047589D /* PreviewViewController.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		538570842D785D850047589D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				538570962D78616D0047589D /* TabBar */,
+				538570832D785D850047589D /* Preview */,
+				538570802D785D850047589D /* Main */,
+				538570982D7861830047589D /* Search */,
+				5385709B2D7862870047589D /* Favorite */,
+				5385709E2D7862C40047589D /* Services */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		538570892D785D8C0047589D /* UIBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				538570882D785D8C0047589D /* UIBuilder.swift */,
+			);
+			path = UIBuilder;
+			sourceTree = "<group>";
+		};
+		5385708E2D785D930047589D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5385708B2D785D930047589D /* AppDelegate.swift */,
+				5385708C2D785D930047589D /* Assets.xcassets */,
+				5385708D2D785D930047589D /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		538570962D78616D0047589D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				538570952D78616D0047589D /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		538570982D7861830047589D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				538570992D7861A20047589D /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5385709B2D7862870047589D /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				5385709C2D78629A0047589D /* FavoriteViewController.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		5385709E2D7862C40047589D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5385709F2D7862D60047589D /* ServicesViewController.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,11 +171,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				5353078A2D737F0B00A6CF08 /* Application */,
-				535307902D73813400A6CF08 /* UIBuilder */,
-				535307972D738CD300A6CF08 /* Screens */,
 			);
 			name = "construction-webdmitriev";
 			packageProductDependencies = (
@@ -139,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				538570912D785D930047589D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +229,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				538570852D785D850047589D /* MainViewController.swift in Sources */,
+				538570972D78616D0047589D /* TabBarController.swift in Sources */,
+				5385708F2D785D930047589D /* AppDelegate.swift in Sources */,
+				5385709A2D7861A20047589D /* SearchViewController.swift in Sources */,
+				5385709D2D78629A0047589D /* FavoriteViewController.swift in Sources */,
+				538570902D785D930047589D /* SceneDelegate.swift in Sources */,
+				5385708A2D785D8C0047589D /* UIBuilder.swift in Sources */,
+				538570862D785D850047589D /* PreviewPresenter.swift in Sources */,
+				538570872D785D850047589D /* PreviewViewController.swift in Sources */,
+				538570A02D7862D60047589D /* ServicesViewController.swift in Sources */,
 				535307872D737EF400A6CF08 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

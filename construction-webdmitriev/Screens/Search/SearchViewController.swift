@@ -5,4 +5,14 @@
 //  Created by Олег Дмитриев on 05.03.2025.
 //
 
-import Foundation
+import UIKit
+
+class SearchViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .appGreen
+    }
+
+}

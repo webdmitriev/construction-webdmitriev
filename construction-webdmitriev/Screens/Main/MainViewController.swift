@@ -18,17 +18,16 @@ final class MainViewController: UIViewController {
     
     lazy var titleLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.text = "Hello, World!"
+        $0.text = "Сервис квартирных решений \nот сделки до отделки"
         $0.textColor = .appBlack
+        $0.numberOfLines = 2
         return $0
     }(UILabel())
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .appWhite
-        self.navigationController?.title = "Title"
         
         setupUI()
         contsraintsUI()
