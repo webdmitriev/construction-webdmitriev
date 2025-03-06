@@ -19,7 +19,7 @@ extension MainViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let item = CollectionSection.MockData()[indexPath.section].items[indexPath.item]
+//        let item = CollectionSection.MockData()[indexPath.section].items[indexPath.item]
         
         switch indexPath.section {
             case 0:
