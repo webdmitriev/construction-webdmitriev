@@ -9,46 +9,37 @@ import UIKit
 
 final class MainViewController: UIViewController {
     
-    private let builder = UIBuilder()
-    
-    lazy var contentView: UIView = {
-        $0.translatesAutoresizingMaskIntoConstraints = false
+    // 1. create collectionSection
+    private lazy var collectionView: UICollectionView = {
+        $0.backgroundColor = .appBg
+        $0.dataSource = self
+        
+        $0.register(LogotypeCell.self, forCellWithReuseIdentifier: LogotypeCell.reuseID)
+
+        //$0.delegate = self
         return $0
-    }(UIView())
+    }(UICollectionView(frame: view.frame, collectionViewLayout: createLayout()))
     
-    lazy var titleLabel: UILabel = {
-        $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.text = "Сервис квартирных решений \nот сделки до отделки"
-        $0.textColor = .appBlack
-        $0.numberOfLines = 2
-        return $0
-    }(UILabel())
+    // 2. create createLayout
+    private func createLayout() -> UICollectionViewCompositionalLayout {
+        UICollectionViewCompositionalLayout { section, _ in
+            switch section {
+            case 0: return self.logotypeSection
+            default: return self.logotypeSection
+            }
+        }
+    }
+    
+    // 3. Sections
+    private lazy var logotypeSection = Logotype().createLogotypeSection()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .appWhite
         
-        setupUI()
-        contsraintsUI()
-    }
-    
-    func setupUI() {
-        view.addSubview(contentView)
-        contentView.addSubview(titleLabel)
-    }
-    
-    func contsraintsUI() {
-        NSLayoutConstraint.activate([
-            contentView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
-            contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: builder.offsetPage),
-            contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -builder.offsetPage),
-            contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
-            
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 100),
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0),
-        ])
+        view.addSubview(collectionView)
     }
     
 }
