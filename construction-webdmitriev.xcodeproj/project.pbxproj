@@ -11,6 +11,11 @@
 		532543842D7A298300D1D45F /* LogotypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532543832D7A298300D1D45F /* LogotypeCell.swift */; };
 		532543882D7A2B6800D1D45F /* CollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532543872D7A2B6800D1D45F /* CollectionData.swift */; };
 		5325438A2D7A30DF00D1D45F /* MainViewController.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532543892D7A30DF00D1D45F /* MainViewController.ext.swift */; };
+		534BE85A2D7E01CE001E8015 /* UIView.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BE8592D7E01CE001E8015 /* UIView.ext.swift */; };
+		534BE85D2D7E047F001E8015 /* BuyAndSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BE85C2D7E047F001E8015 /* BuyAndSell.swift */; };
+		534BE85F2D7E05C8001E8015 /* BuyAndSellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BE85E2D7E05C8001E8015 /* BuyAndSellCell.swift */; };
+		534BE8622D7E12E6001E8015 /* TitleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BE8612D7E12E6001E8015 /* TitleSection.swift */; };
+		534BE8642D7E13B6001E8015 /* TitleSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BE8632D7E13B6001E8015 /* TitleSectionCell.swift */; };
 		535307872D737EF400A6CF08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535307832D737EF400A6CF08 /* ViewController.swift */; };
 		538570852D785D850047589D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385707F2D785D850047589D /* MainViewController.swift */; };
 		538570862D785D850047589D /* PreviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538570812D785D850047589D /* PreviewPresenter.swift */; };
@@ -30,6 +35,11 @@
 		532543832D7A298300D1D45F /* LogotypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogotypeCell.swift; sourceTree = "<group>"; };
 		532543872D7A2B6800D1D45F /* CollectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionData.swift; sourceTree = "<group>"; };
 		532543892D7A30DF00D1D45F /* MainViewController.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.ext.swift; sourceTree = "<group>"; };
+		534BE8592D7E01CE001E8015 /* UIView.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.ext.swift; sourceTree = "<group>"; };
+		534BE85C2D7E047F001E8015 /* BuyAndSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyAndSell.swift; sourceTree = "<group>"; };
+		534BE85E2D7E05C8001E8015 /* BuyAndSellCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyAndSellCell.swift; sourceTree = "<group>"; };
+		534BE8612D7E12E6001E8015 /* TitleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSection.swift; sourceTree = "<group>"; };
+		534BE8632D7E13B6001E8015 /* TitleSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSectionCell.swift; sourceTree = "<group>"; };
 		535307672D737EB000A6CF08 /* construction-webdmitriev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "construction-webdmitriev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		535307812D737EF400A6CF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		535307832D737EF400A6CF08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				532543822D7A296300D1D45F /* Logotype */,
+				534BE8602D7E12C9001E8015 /* TitleSection */,
+				534BE85B2D7E046E001E8015 /* BuyAndSell */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -77,6 +89,7 @@
 		5325437E2D7A185900D1D45F /* Exstensions */ = {
 			isa = PBXGroup;
 			children = (
+				534BE8592D7E01CE001E8015 /* UIView.ext.swift */,
 			);
 			path = Exstensions;
 			sourceTree = "<group>";
@@ -94,9 +107,26 @@
 			isa = PBXGroup;
 			children = (
 				532543872D7A2B6800D1D45F /* CollectionData.swift */,
-				532543892D7A30DF00D1D45F /* MainViewController.ext.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		534BE85B2D7E046E001E8015 /* BuyAndSell */ = {
+			isa = PBXGroup;
+			children = (
+				534BE85C2D7E047F001E8015 /* BuyAndSell.swift */,
+				534BE85E2D7E05C8001E8015 /* BuyAndSellCell.swift */,
+			);
+			path = BuyAndSell;
+			sourceTree = "<group>";
+		};
+		534BE8602D7E12C9001E8015 /* TitleSection */ = {
+			isa = PBXGroup;
+			children = (
+				534BE8612D7E12E6001E8015 /* TitleSection.swift */,
+				534BE8632D7E13B6001E8015 /* TitleSectionCell.swift */,
+			);
+			path = TitleSection;
 			sourceTree = "<group>";
 		};
 		5353075E2D737EB000A6CF08 = {
@@ -133,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				5385707F2D785D850047589D /* MainViewController.swift */,
+				532543892D7A30DF00D1D45F /* MainViewController.ext.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -284,13 +315,18 @@
 				532543842D7A298300D1D45F /* LogotypeCell.swift in Sources */,
 				538570852D785D850047589D /* MainViewController.swift in Sources */,
 				538570972D78616D0047589D /* TabBarController.swift in Sources */,
+				534BE85A2D7E01CE001E8015 /* UIView.ext.swift in Sources */,
+				534BE8642D7E13B6001E8015 /* TitleSectionCell.swift in Sources */,
 				5385708F2D785D930047589D /* AppDelegate.swift in Sources */,
 				5385709A2D7861A20047589D /* SearchViewController.swift in Sources */,
 				5385709D2D78629A0047589D /* FavoriteViewController.swift in Sources */,
+				534BE85D2D7E047F001E8015 /* BuyAndSell.swift in Sources */,
+				534BE8622D7E12E6001E8015 /* TitleSection.swift in Sources */,
 				538570902D785D930047589D /* SceneDelegate.swift in Sources */,
 				5385708A2D785D8C0047589D /* UIBuilder.swift in Sources */,
 				5325438A2D7A30DF00D1D45F /* MainViewController.ext.swift in Sources */,
 				538570862D785D850047589D /* PreviewPresenter.swift in Sources */,
+				534BE85F2D7E05C8001E8015 /* BuyAndSellCell.swift in Sources */,
 				532543882D7A2B6800D1D45F /* CollectionData.swift in Sources */,
 				538570872D785D850047589D /* PreviewViewController.swift in Sources */,
 				538570A02D7862D60047589D /* ServicesViewController.swift in Sources */,

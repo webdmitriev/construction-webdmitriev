@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LogotypeCell: UICollectionViewCell, CellProtocol {
+class LogotypeCell: UICollectionViewCell {
 
     static var reuseID: String = "LogotypeCell"
     private lazy var appBuilder = UIBuilder()
@@ -22,8 +22,8 @@ class LogotypeCell: UICollectionViewCell, CellProtocol {
         setupConstraint()
     }
     
-    func setupCell() {
-        self.logotype.image = UIImage(named: "logotype-white")
+    func setupCell(item: CollectionItems) {
+        self.logotype.image = UIImage(named: item.image ?? "logotype-white")
         self.logotype.widthAnchor.constraint(equalToConstant: 134).isActive = true
         self.logotype.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }

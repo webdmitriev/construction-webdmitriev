@@ -11,7 +11,7 @@ final class UIBuilder {
     
     let offsetPage: CGFloat = 16
     
-    func addLabel(text: String, fontS: CGFloat, fontW: UIFont.Weight, color: UIColor = .appBlack, line: Int = 1) -> UILabel {
+    func addLabel(text: String, fontS: CGFloat = 14, fontW: UIFont.Weight = .regular, color: UIColor = .appBlack, line: Int = 1) -> UILabel {
         let txt = UILabel()
         txt.translatesAutoresizingMaskIntoConstraints = false
         txt.text = text

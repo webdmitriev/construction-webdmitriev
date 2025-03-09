@@ -56,7 +56,7 @@ class PreviewViewController: UIViewController, PreviewViewProtocol, PreviewNavig
     func navigateToMainViewController() {
         let tabBarVC = TabBarController()
         
-        // Устанавливаем MainViewController как rootViewController
+        // Устанавливаем TabBarController как rootViewController
         if let window = view.window {
             window.rootViewController = tabBarVC
             window.makeKeyAndVisible()
