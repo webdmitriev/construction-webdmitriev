@@ -24,13 +24,13 @@ class TitleForBlocksCell: UICollectionViewCell {
     private lazy var blockStackTwoTitle: UILabel = appBuilder.addLabel(text: ".", fontS: 14, fontW: .bold,
                                                                        color: .black, line: 2)
     private lazy var blockStackTwoDescr: UILabel = appBuilder.addLabel(text: ".", fontS: 14, fontW: .regular,
-                                                                       color: .black, line: 3)
+                                                                       color: .black, line: 2)
     
     private lazy var blockStackThree: UIView = appBuilder.addBlockViewForStack(bgc: .appBlockThree)
     private lazy var blockStackThreeTitle: UILabel = appBuilder.addLabel(text: ".", fontS: 14, fontW: .bold,
                                                                          color: .black, line: 2)
     private lazy var blockStackThreeDescr: UILabel = appBuilder.addLabel(text: ".", fontS: 14, fontW: .regular,
-                                                                         color: .black, line: 3)
+                                                                         color: .black, line: 2)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -50,25 +50,37 @@ class TitleForBlocksCell: UICollectionViewCell {
     func setupCell(item: CollectionItems) {
         self.titleBlock.text = item.title
         
+        // MARK: blockStackOne
         if ((item.blockStackOneTitle?.isEmpty) != nil) || ((item.blockStackOneDescr?.isEmpty) != nil) {
             self.blockStackOneTitle.text = item.blockStackOneTitle ?? ""
             self.blockStackOneDescr.text = item.blockStackOneDescr ?? ""
         }
+        if item.blockStackOneTitle?.isEmpty == nil && item.blockStackOneDescr?.isEmpty == nil {
+            self.blockStackOne.isHidden = true
+        }
         
-        if ((item.blockStackOneTitle?.isEmpty) != nil) || ((item.blockStackOneDescr?.isEmpty) != nil) {
+        // MARK: blockStackTwo
+        if ((item.blockStackTwoTitle?.isEmpty) != nil) || ((item.blockStackTwoDescr?.isEmpty) != nil) {
             self.blockStackTwoTitle.text = item.blockStackTwoTitle ?? ""
             self.blockStackTwoDescr.text = item.blockStackTwoDescr ?? ""
         }
+        if item.blockStackTwoTitle?.isEmpty == nil && item.blockStackTwoDescr?.isEmpty == nil {
+            self.blockStackTwo.isHidden = true
+        }
         
-        if ((item.blockStackOneTitle?.isEmpty) != nil) && ((item.blockStackOneDescr?.isEmpty) != nil) {
+        // MARK: blockStackThree
+        if ((item.blockStackThreeTitle?.isEmpty) != nil) || ((item.blockStackThreeDescr?.isEmpty) != nil) {
             self.blockStackThreeTitle.text = item.blockStackThreeTitle ?? ""
             self.blockStackThreeDescr.text = item.blockStackThreeDescr ?? ""
+        }
+        if item.blockStackThreeTitle?.isEmpty == nil && item.blockStackThreeDescr?.isEmpty == nil {
+            self.blockStackThree.isHidden = true
         }
     }
     
     func setupConstraint() {
         NSLayoutConstraint.activate([
-            titleBlock.topAnchor.constraint(equalTo: topAnchor, constant: 30),
+            titleBlock.topAnchor.constraint(equalTo: topAnchor, constant: 24),
             titleBlock.leadingAnchor.constraint(equalTo: leadingAnchor, constant: appBuilder.offsetPage),
             titleBlock.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -appBuilder.offsetPage),
             
