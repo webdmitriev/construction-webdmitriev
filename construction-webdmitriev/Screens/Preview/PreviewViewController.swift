@@ -34,7 +34,7 @@ class PreviewViewController: UIViewController, PreviewViewProtocol, PreviewNavig
     }
     
     internal func setupUI() {
-        contentView.backgroundColor = .appGreen
+        contentView.backgroundColor = .appBg
         
         view.addSubview(contentView)
         contentView.addSubview(logotype)
@@ -47,7 +47,7 @@ class PreviewViewController: UIViewController, PreviewViewProtocol, PreviewNavig
             contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
             contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
             
-            logotype.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8, constant: 0),
+            logotype.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.7, constant: 0),
             logotype.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             logotype.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
         ])

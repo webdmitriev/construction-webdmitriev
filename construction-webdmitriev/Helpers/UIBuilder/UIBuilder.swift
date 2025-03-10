@@ -10,6 +10,7 @@ import UIKit
 final class UIBuilder {
     
     let offsetPage: CGFloat = 16
+    let screenSizeW: CGFloat = UIScreen.main.bounds.width
     
     func addLabel(text: String, fontS: CGFloat = 14, fontW: UIFont.Weight = .regular, color: UIColor = .appBlack, line: Int = 1) -> UILabel {
         let txt = UILabel()
@@ -28,6 +29,15 @@ final class UIBuilder {
         img.contentMode = .scaleAspectFit
         img.layer.masksToBounds = true
         return img
+    }
+    
+    func addBlockViewForStack(bgc: UIColor = .appWhite) -> UIView {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = bgc
+        view.layer.cornerRadius = 10
+        view.layer.masksToBounds = true
+        return view
     }
     
 }

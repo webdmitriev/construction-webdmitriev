@@ -25,6 +25,18 @@ struct CollectionItems {
     var image: String?
     var descr: String?
     var name: String?
+    var blockStackOneTitle: String?
+    var blockStackOneDescr: String?
+    var blockStackTwoTitle: String?
+    var blockStackTwoDescr: String?
+    var blockStackThreeTitle: String?
+    var blockStackThreeDescr: String?
+    var collection: [CollectionData]?
+}
+
+struct CollectionData {
+    var title: String?
+    var descr: String?
 }
 
 struct CollectionSection {
@@ -53,7 +65,17 @@ struct CollectionSection {
         ]
         let buyAndSellSection: CollectionSection = CollectionSection(items: buyAndSellItems, type: .buyAndSellSection)
 
+        // MARK: data section -> TITLE
+        let titleForBlocks: [CollectionItems] = [
+            CollectionItems(title: "Услуги",
+                            blockStackOneTitle: "Страхование",
+                            blockStackOneDescr: "Защитите имущество \nздоровье и жизнь",
+                            blockStackTwoTitle: "Оценка недвижимости",
+                            blockStackTwoDescr: "Узнайте стоимость \nобъекта недвижимости",
+                            blockStackThreeTitle: "Дизайн \nинтерьера")
+        ]
+        let titleForBlocksSection: CollectionSection = CollectionSection(items: titleForBlocks, type: .titleSection)
         
-        return [logotypeSection, titleSection, buyAndSellSection]
+        return [logotypeSection, titleSection, buyAndSellSection, titleForBlocksSection]
     }
 }

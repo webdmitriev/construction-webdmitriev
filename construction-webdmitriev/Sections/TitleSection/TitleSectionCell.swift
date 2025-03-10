@@ -12,7 +12,7 @@ class TitleSectionCell: UICollectionViewCell {
     static let reuseID: String = "TitleSectionCell"
     private lazy var appBuilder = UIBuilder()
     
-    private lazy var titleCell: UILabel = appBuilder.addLabel(text: "1", fontS: 24, fontW: .bold, color: .appWhite, line: 2)
+    private lazy var titleCell: UILabel = appBuilder.addLabel(text: ".", fontS: 24, fontW: .bold, color: .appWhite, line: 2)
     
     override init(frame: CGRect) {
         super.init(frame: frame)

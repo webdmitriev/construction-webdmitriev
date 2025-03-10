@@ -19,6 +19,8 @@ final class MainViewController: UIViewController, UICollectionViewDelegate {
         $0.register(TitleSectionCell.self, forCellWithReuseIdentifier: TitleSectionCell.reuseID)
         
         $0.register(BuyAndSellCell.self, forCellWithReuseIdentifier: BuyAndSellCell.reuseID)
+        
+        $0.register(TitleForBlocksCell.self, forCellWithReuseIdentifier: TitleForBlocksCell.reuseID)
 
         $0.delegate = self
         return $0
@@ -31,6 +33,7 @@ final class MainViewController: UIViewController, UICollectionViewDelegate {
             case 0: return self.logotypeSection
             case 1: return self.titleSection
             case 2: return self.buyAndSellSection
+            case 3: return self.titleForBlockSection
             default: return self.logotypeSection
             }
         }
@@ -40,6 +43,7 @@ final class MainViewController: UIViewController, UICollectionViewDelegate {
     private lazy var logotypeSection = Logotype().createLogotypeSection()
     private lazy var titleSection = TitleSection().createSection()
     private lazy var buyAndSellSection = BuyAndSell().createSection()
+    private lazy var titleForBlockSection = TitleForBlocks().createSection()
     
 
     override func viewDidLoad() {
