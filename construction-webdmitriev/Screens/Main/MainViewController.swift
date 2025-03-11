@@ -9,10 +9,11 @@ import UIKit
 
 final class MainViewController: UIViewController, UICollectionViewDelegate {
     
-    // 1. create collectionSection
+    // 1. create collectionSections
     private lazy var collectionView: UICollectionView = {
         $0.backgroundColor = .appBg
         $0.dataSource = self
+        $0.delegate = self
         
         $0.register(LogotypeCell.self, forCellWithReuseIdentifier: LogotypeCell.reuseID)
         
@@ -21,12 +22,13 @@ final class MainViewController: UIViewController, UICollectionViewDelegate {
         $0.register(BuyAndSellCell.self, forCellWithReuseIdentifier: BuyAndSellCell.reuseID)
         
         $0.register(TitleForBlocksCell.self, forCellWithReuseIdentifier: TitleForBlocksCell.reuseID)
+        
+        $0.register(ProductsHorizontalCell.self, forCellWithReuseIdentifier: ProductsHorizontalCell.reuseID)
 
-        $0.delegate = self
         return $0
     }(UICollectionView(frame: view.frame, collectionViewLayout: createLayout()))
     
-    // 2. create createLayout
+    // 2. create createLayouts
     private func createLayout() -> UICollectionViewCompositionalLayout {
         UICollectionViewCompositionalLayout { section, _ in
             switch section {
@@ -34,6 +36,7 @@ final class MainViewController: UIViewController, UICollectionViewDelegate {
             case 1: return self.titleSection
             case 2: return self.buyAndSellSection
             case 3: return self.titleForBlockSection
+            case 4: return self.productsHorizontalSection
             default: return self.logotypeSection
             }
         }
@@ -44,12 +47,12 @@ final class MainViewController: UIViewController, UICollectionViewDelegate {
     private lazy var titleSection = TitleSection().createSection()
     private lazy var buyAndSellSection = BuyAndSell().createSection()
     private lazy var titleForBlockSection = TitleForBlocks().createSection()
+    private lazy var productsHorizontalSection = ProductsHorizontal().createSection()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .appGreen
+        view.backgroundColor = .appBg
         
         view.addSubview(collectionView)
     }

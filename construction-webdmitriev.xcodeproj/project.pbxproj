@@ -28,6 +28,8 @@
 		5385709A2D7861A20047589D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538570992D7861A20047589D /* SearchViewController.swift */; };
 		5385709D2D78629A0047589D /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385709C2D78629A0047589D /* FavoriteViewController.swift */; };
 		538570A02D7862D60047589D /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385709F2D7862D60047589D /* ServicesViewController.swift */; };
+		53940A3E2D8045B50056A303 /* ProductsHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53940A3D2D8045B50056A303 /* ProductsHorizontal.swift */; };
+		53940A402D80474C0056A303 /* ProductsHorizontalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53940A3F2D80474C0056A303 /* ProductsHorizontalCell.swift */; };
 		53B29F5A2D7ED8D800E7E68D /* TitleForBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B29F592D7ED8D800E7E68D /* TitleForBlocks.swift */; };
 		53B29F5C2D7ED8F200E7E68D /* TitleForBlocksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B29F5B2D7ED8F200E7E68D /* TitleForBlocksCell.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		538570992D7861A20047589D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5385709C2D78629A0047589D /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		5385709F2D7862D60047589D /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		53940A3D2D8045B50056A303 /* ProductsHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsHorizontal.swift; sourceTree = "<group>"; };
+		53940A3F2D80474C0056A303 /* ProductsHorizontalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsHorizontalCell.swift; sourceTree = "<group>"; };
 		53B29F592D7ED8D800E7E68D /* TitleForBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleForBlocks.swift; sourceTree = "<group>"; };
 		53B29F5B2D7ED8F200E7E68D /* TitleForBlocksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleForBlocksCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +82,7 @@
 				534BE8602D7E12C9001E8015 /* TitleSection */,
 				534BE85B2D7E046E001E8015 /* BuyAndSell */,
 				53B29F582D7ED86E00E7E68D /* TitleForBlocks */,
+				53940A3C2D80459A0056A303 /* ProductsHorizontal */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -245,6 +250,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		53940A3C2D80459A0056A303 /* ProductsHorizontal */ = {
+			isa = PBXGroup;
+			children = (
+				53940A3D2D8045B50056A303 /* ProductsHorizontal.swift */,
+				53940A3F2D80474C0056A303 /* ProductsHorizontalCell.swift */,
+			);
+			path = ProductsHorizontal;
+			sourceTree = "<group>";
+		};
 		53B29F582D7ED86E00E7E68D /* TitleForBlocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +347,7 @@
 				534BE8642D7E13B6001E8015 /* TitleSectionCell.swift in Sources */,
 				5385708F2D785D930047589D /* AppDelegate.swift in Sources */,
 				5385709A2D7861A20047589D /* SearchViewController.swift in Sources */,
+				53940A3E2D8045B50056A303 /* ProductsHorizontal.swift in Sources */,
 				5385709D2D78629A0047589D /* FavoriteViewController.swift in Sources */,
 				534BE85D2D7E047F001E8015 /* BuyAndSell.swift in Sources */,
 				534BE8622D7E12E6001E8015 /* TitleSection.swift in Sources */,
@@ -346,6 +361,7 @@
 				532543882D7A2B6800D1D45F /* CollectionData.swift in Sources */,
 				538570872D785D850047589D /* PreviewViewController.swift in Sources */,
 				538570A02D7862D60047589D /* ServicesViewController.swift in Sources */,
+				53940A402D80474C0056A303 /* ProductsHorizontalCell.swift in Sources */,
 				535307872D737EF400A6CF08 /* ViewController.swift in Sources */,
 				532543812D7A289700D1D45F /* Logotype.swift in Sources */,
 			);
