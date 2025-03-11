@@ -30,6 +30,7 @@
 		538570A02D7862D60047589D /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385709F2D7862D60047589D /* ServicesViewController.swift */; };
 		53940A3E2D8045B50056A303 /* ProductsHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53940A3D2D8045B50056A303 /* ProductsHorizontal.swift */; };
 		53940A402D80474C0056A303 /* ProductsHorizontalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53940A3F2D80474C0056A303 /* ProductsHorizontalCell.swift */; };
+		53940A442D80547D0056A303 /* ProductHorizontalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53940A432D80547D0056A303 /* ProductHorizontalItem.swift */; };
 		53B29F5A2D7ED8D800E7E68D /* TitleForBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B29F592D7ED8D800E7E68D /* TitleForBlocks.swift */; };
 		53B29F5C2D7ED8F200E7E68D /* TitleForBlocksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B29F5B2D7ED8F200E7E68D /* TitleForBlocksCell.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		5385709F2D7862D60047589D /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		53940A3D2D8045B50056A303 /* ProductsHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsHorizontal.swift; sourceTree = "<group>"; };
 		53940A3F2D80474C0056A303 /* ProductsHorizontalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsHorizontalCell.swift; sourceTree = "<group>"; };
+		53940A432D80547D0056A303 /* ProductHorizontalItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHorizontalItem.swift; sourceTree = "<group>"; };
 		53B29F592D7ED8D800E7E68D /* TitleForBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleForBlocks.swift; sourceTree = "<group>"; };
 		53B29F5B2D7ED8F200E7E68D /* TitleForBlocksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleForBlocksCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +162,7 @@
 			children = (
 				5385708E2D785D930047589D /* Application */,
 				5325437D2D7A183D00D1D45F /* Helpers */,
+				53940A412D80545D0056A303 /* Components */,
 				532543852D7A2B4B00D1D45F /* Model */,
 				5325437C2D7A16CC00D1D45F /* Sections */,
 				538570842D785D850047589D /* Screens */,
@@ -259,6 +262,22 @@
 			path = ProductsHorizontal;
 			sourceTree = "<group>";
 		};
+		53940A412D80545D0056A303 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				53940A422D8054680056A303 /* Products */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		53940A422D8054680056A303 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53940A432D80547D0056A303 /* ProductHorizontalItem.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 		53B29F582D7ED86E00E7E68D /* TitleForBlocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +374,7 @@
 				5385708A2D785D8C0047589D /* UIBuilder.swift in Sources */,
 				53B29F5C2D7ED8F200E7E68D /* TitleForBlocksCell.swift in Sources */,
 				5325438A2D7A30DF00D1D45F /* MainViewController.ext.swift in Sources */,
+				53940A442D80547D0056A303 /* ProductHorizontalItem.swift in Sources */,
 				538570862D785D850047589D /* PreviewPresenter.swift in Sources */,
 				534BE85F2D7E05C8001E8015 /* BuyAndSellCell.swift in Sources */,
 				53B29F5A2D7ED8D800E7E68D /* TitleForBlocks.swift in Sources */,

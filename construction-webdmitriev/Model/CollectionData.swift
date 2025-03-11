@@ -97,6 +97,9 @@ struct CollectionSection {
         ]
         let titleForBlocksSection: CollectionSection = CollectionSection(items: titleForBlocks, type: .titleForBlocksSection)
         
+        // MARK: data section -> TITLE
+        
+        // MARK: data section -> PRODUCTS HORIZONTAL
         let productsItems: [CollectionItems] = [
             CollectionItems(
                 title: "Жилые комплексы",
