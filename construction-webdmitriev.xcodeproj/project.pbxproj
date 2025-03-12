@@ -11,6 +11,7 @@
 		532543842D7A298300D1D45F /* LogotypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532543832D7A298300D1D45F /* LogotypeCell.swift */; };
 		532543882D7A2B6800D1D45F /* CollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532543872D7A2B6800D1D45F /* CollectionData.swift */; };
 		5325438A2D7A30DF00D1D45F /* MainViewController.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532543892D7A30DF00D1D45F /* MainViewController.ext.swift */; };
+		533AFA142D818229008CEA09 /* UILabel.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533AFA132D818229008CEA09 /* UILabel.ext.swift */; };
 		534BE85A2D7E01CE001E8015 /* UIView.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BE8592D7E01CE001E8015 /* UIView.ext.swift */; };
 		534BE85D2D7E047F001E8015 /* BuyAndSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BE85C2D7E047F001E8015 /* BuyAndSell.swift */; };
 		534BE85F2D7E05C8001E8015 /* BuyAndSellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534BE85E2D7E05C8001E8015 /* BuyAndSellCell.swift */; };
@@ -40,6 +41,7 @@
 		532543832D7A298300D1D45F /* LogotypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogotypeCell.swift; sourceTree = "<group>"; };
 		532543872D7A2B6800D1D45F /* CollectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionData.swift; sourceTree = "<group>"; };
 		532543892D7A30DF00D1D45F /* MainViewController.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.ext.swift; sourceTree = "<group>"; };
+		533AFA132D818229008CEA09 /* UILabel.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.ext.swift; sourceTree = "<group>"; };
 		534BE8592D7E01CE001E8015 /* UIView.ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.ext.swift; sourceTree = "<group>"; };
 		534BE85C2D7E047F001E8015 /* BuyAndSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyAndSell.swift; sourceTree = "<group>"; };
 		534BE85E2D7E05C8001E8015 /* BuyAndSellCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyAndSellCell.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				534BE8592D7E01CE001E8015 /* UIView.ext.swift */,
+				533AFA132D818229008CEA09 /* UILabel.ext.swift */,
 			);
 			path = Exstensions;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				5385709A2D7861A20047589D /* SearchViewController.swift in Sources */,
 				53940A3E2D8045B50056A303 /* ProductsHorizontal.swift in Sources */,
 				5385709D2D78629A0047589D /* FavoriteViewController.swift in Sources */,
+				533AFA142D818229008CEA09 /* UILabel.ext.swift in Sources */,
 				534BE85D2D7E047F001E8015 /* BuyAndSell.swift in Sources */,
 				534BE8622D7E12E6001E8015 /* TitleSection.swift in Sources */,
 				538570902D785D930047589D /* SceneDelegate.swift in Sources */,

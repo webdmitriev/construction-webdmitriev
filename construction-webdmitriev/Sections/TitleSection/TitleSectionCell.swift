@@ -12,12 +12,19 @@ class TitleSectionCell: UICollectionViewCell {
     static let reuseID: String = "TitleSectionCell"
     private lazy var appBuilder = UIBuilder()
     
-    private lazy var titleCell: UILabel = appBuilder.addLabel(text: ".", fontS: 24, fontW: .bold, color: .appWhite, line: 2)
+//    private lazy var titleCell: UILabel = appBuilder.addLabel(text: ".", fontS: 24, fontW: .bold, color: .appWhite, line: 2)
+    
+    private lazy var titleCell = PaddedLabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         backgroundColor = .clear
+        
+        self.titleCell.translatesAutoresizingMaskIntoConstraints = false
+        self.titleCell.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        self.titleCell.numberOfLines = 2
+        self.titleCell.sizeToFit()
         
         addSubview(titleCell)
         
@@ -25,7 +32,12 @@ class TitleSectionCell: UICollectionViewCell {
     }
     
     func setupCell(item: CollectionItems) {
+        backgroundColor = item.bgc ?? UIColor.clear
+
         self.titleCell.text = item.title
+        self.titleCell.paddingBottom = 40
+        self.titleCell.textColor = item.color ?? UIColor.appBlack
+        self.titleCell.sizeToFit()
     }
     
     func setupConstraint() {

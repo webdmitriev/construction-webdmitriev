@@ -23,6 +23,8 @@ final class MainViewController: UIViewController, UICollectionViewDelegate {
         
         $0.register(TitleForBlocksCell.self, forCellWithReuseIdentifier: TitleForBlocksCell.reuseID)
         
+        $0.register(TitleSectionCell.self, forCellWithReuseIdentifier: TitleSectionCell.reuseID)
+        
         $0.register(ProductsHorizontalCell.self, forCellWithReuseIdentifier: ProductsHorizontalCell.reuseID)
 
         return $0
@@ -36,7 +38,8 @@ final class MainViewController: UIViewController, UICollectionViewDelegate {
             case 1: return self.titleSection
             case 2: return self.buyAndSellSection
             case 3: return self.titleForBlockSection
-            case 4: return self.productsHorizontalSection
+            case 4: return self.productsTitleSection
+            case 5: return self.productsHorizontalSection
             default: return self.logotypeSection
             }
         }
@@ -47,6 +50,7 @@ final class MainViewController: UIViewController, UICollectionViewDelegate {
     private lazy var titleSection = TitleSection().createSection()
     private lazy var buyAndSellSection = BuyAndSell().createSection()
     private lazy var titleForBlockSection = TitleForBlocks().createSection()
+    private lazy var productsTitleSection = TitleSection().createSection()
     private lazy var productsHorizontalSection = ProductsHorizontal().createSection()
     
     override func viewDidLoad() {

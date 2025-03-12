@@ -15,9 +15,9 @@ final class ProductsHorizontal {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(240))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(260), heightDimension: .absolute(194))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-        group.contentInsets = .init(top: 0, leading: 0, bottom: 0, trailing: 0)
+        group.contentInsets = .init(top: 0, leading: 0, bottom: 0, trailing: 8)
         
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .continuous

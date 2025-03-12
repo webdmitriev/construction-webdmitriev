@@ -39,6 +39,10 @@ extension MainViewController: UICollectionViewDataSource {
         cell.setupCell(item: item)
         return cell
         case 4:
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleSectionCell.reuseID, for: indexPath) as! TitleSectionCell
+        cell.setupCell(item: item)
+        return cell
+        case 5:
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductsHorizontalCell.reuseID, for: indexPath) as! ProductsHorizontalCell
         cell.setupCell(item: item)
         return cell

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol CellProtocol: AnyObject {
     static var reuseID: String { get }
@@ -27,6 +28,9 @@ struct CollectionItems {
     var image: String?
     var descr: String?
     var name: String?
+    var paddingBottom: CGFloat?
+    var color: UIColor?
+    var bgc: UIColor?
     var blockStackOneTitle: String?
     var blockStackOneDescr: String?
     var blockStackTwoTitle: String?
@@ -74,7 +78,7 @@ struct CollectionSection {
         
         // MARK: data section -> TITLE
         let titleItems: [CollectionItems] = [
-            CollectionItems(title: "Сервис квартирных решений \nот сделки до отделки")
+            CollectionItems(title: "Сервис квартирных решений \nот сделки до отделки", paddingBottom: 20, color: UIColor.appWhite, bgc: UIColor.appBg)
         ]
         let titleSection: CollectionSection = CollectionSection(items: titleItems, type: .titleSection)
         
@@ -98,6 +102,10 @@ struct CollectionSection {
         let titleForBlocksSection: CollectionSection = CollectionSection(items: titleForBlocks, type: .titleForBlocksSection)
         
         // MARK: data section -> TITLE
+        let productsTitle: [CollectionItems] = [
+            CollectionItems(title: "Жилые комплексы", paddingBottom: 14, color: UIColor.appBlack, bgc: UIColor.appWhite)
+        ]
+        let productsTitleSection: CollectionSection = CollectionSection(items: productsTitle, type: .titleSection)
         
         // MARK: data section -> PRODUCTS HORIZONTAL
         let productsItems: [CollectionItems] = [
@@ -127,7 +135,7 @@ struct CollectionSection {
         ]
         let productsHorizontalSection = CollectionSection(items: productsItems, type: .productsDataSection)
         
-        return [logotypeSection, titleSection, buyAndSellSection, titleForBlocksSection, productsHorizontalSection]
+        return [logotypeSection, titleSection, buyAndSellSection, titleForBlocksSection, productsTitleSection, productsHorizontalSection]
     }
     
     
